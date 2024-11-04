@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="360 Autoconcept - Dubai’s Leading Car Care Experts, specializing in Peelable Paint, PPF, and Premium Car Care Solutions. Get a Free Quote!">
+    <title>360 Autoconcept | Car Care Experts in Dubai</title>
+    <link rel="icon" href="https://www.cardip.de/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #eaeaea;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        header, footer {
+            background: #111;
+            color: #eaeaea;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e0b800;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1610915513754-24da1249ee38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            padding: 0.8rem 2rem;
+            background-color: #FFD700;
+            color: #111;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e0b800;
+            transform: translateY(-3px);
+        }
+        .services {
+            padding: 1.5rem 1rem;
+            text-align: center;
+            background-color: #222;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+        }
+        .services h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #FFD700;
+        }
+        .service-item {
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .service-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .service-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #FFD700;
+        }
+        .service-item p {
+            font-size: 0.9rem;
+        }
+        .form-section {
+            background-color: #222;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 100%;
+            margin: 3rem auto;
+            text-align: left;
+        }
+        .form-section h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: #FFD700;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #eaeaea;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #333;
+            color: #eaeaea;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 1rem;
+            background-color: #FFD700;
+            color: #111;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #e0b800;
+            transform: translateY(-3px);
+        }
+        footer {
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding: 2rem 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .footer-info {
+            margin-top: 1.5rem;
+        }
+        .footer-info p {
+            margin: 0.5rem 0;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 24px;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-float img {
+            width: 30px;
+            height: 30px;
+            content: url('https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png');
+        }
+
+        /* Instagram Floating Button */
+        .instagram-float {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background-color: #C13584;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 24px;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        .instagram-float:hover {
+            transform: scale(1.1);
+        }
+        .instagram-float img {
+            width: 30px;
+            height: 30px;
+            content: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon_logo.png');
+        }
+
+        /* Menu Icon Styling */
+        .menu-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .menu-icon {
+            font-size: 2rem;
+            color: #FFD700;
+            cursor: pointer;
+            background-color: #111;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        #mobile-menu {
+            position: fixed;
+            top: 60px;
+            left: 20px;
+            background: #111;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 200px;
+            display: none;
+        }
+        #mobile-menu a {
+            display: block;
+            margin-bottom: 1rem;
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #mobile-menu a:hover {
+            color: #e0b800;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="C:\Users\fahad\OneDrive\Desktop\New folder\img/5.png" alt="360 Autoconcept Logo">
+        <h1 style="font-size: 120%;">Welcome to 360 Autoconcept</h1>
+        <p>Dubai’s Leading Car Care Experts</p>
+    </header>
+
+    <!-- Menu Icon Section -->
+    <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav id="mobile-menu">
+            <a href="#services">Services</a>
+            <a href="#contact-form">Get a Quote</a>
+            <a href="#location">Location</a>
+            <a href="#footer">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Transform Your Car with the Best in Car Care!</h2>
+            <p>Official Distributor of Cardip Peelable Paint | Premium Paint Protection and More</p>
+            <a href="#contact-form" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <img src="https://www.cardip.de/images/UAE-abu-dhabi-cardip-sprayfilm.jpg" alt="CARDIP Schulungen" width="500" height="500">
+                <h3>Cardip® - Peelable Paint</h3>
+                <p>Get a fresh new look for your car with Cardip® Peelable Paint, offering high durability and easy removability for complete customization.</p>
+            </div>
+            <div class="service-item">
+                <img loading="lazy" width="500" height="500" src="https://www.carzspa.com/wp-content/uploads/2023/12/clear-PPF-being.webp" class="attachment-full size-full wp-image-27517 lazyloaded" alt="A clear PPF being applied on a black car">
+                <h3>Paint Protection Film (PPF)</h3>
+                <p>Shield your car’s paint from scratches, chips, and UV rays.</p>
+            </div>
+            <div class="service-item">
+                <img src="C:\Users\fahad\OneDrive\Desktop\New folder\img/2.jpg" alt="Premium Detailing" width="500" height="500">
+                <h3>Premium Detailing</h3>
+                <p>Keep your car in showroom condition with our detailing services.</p>
+            </div>
+            <div class="service-item">
+                <img src="C:\Users\fahad\OneDrive\Desktop\New folder\img/6.jpg" alt="Ceramic Coating" width="500" height="500">
+                <h3>Ceramic Coating</h3>
+                <p>Protect your car’s surface with a high-quality ceramic layer for added durability and shine.</p>
+            </div>
+            <div class="service-item">
+                <img src="C:\Users\fahad\OneDrive\Desktop\New folder\img/7.jpg" alt="Window Tinting" width="500" height="500">
+                <h3>Window Tinting</h3>
+                <p>Enhance privacy and UV protection with our premium window tinting options.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2>Our Location</h2>
+            <iframe src="https://maps.google.com/maps?q=360%20Auto%20Concept%20(CarDip%C2%AE)%20-%20FNC%20Compound,%20Phase%202%20-%20Plot%20597%20-%20Dubai%20Investment%20Park%20-%202%20-%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="form-section">
+        <div class="container">
+            <h3>Get a Free Quote</h3>
+            <!-- Formspree Form -->
+            <form action="https://formspree.io/f/xyzyenlk" method="POST">
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In:</label>
+                    <select id="service" name="service">
+                        <option value="peelable-paint">Cardip® - Peelable Paint</option>
+                        <option value="ppf">Paint Protection Film (PPF)</option>
+                        <option value="detailing">Premium Detailing</option>
+                        <option value="ceramic-coating">Ceramic Coating</option>
+                        <option value="window-tinting">Window Tinting</option>
+                        <option value="interior-protection">Interior Protection</option>
+                        <option value="upholstery">Upholstery</option>
+                        <option value="carbon-fiber">Carbon Fiber</option>
+                        <option value="body-kits">Body Kits</option>
+                        <option value="smart-paint">Smart Paint</option>
+                        <option value="pdr">Paintless Dent Removal (PDR)</option>
+                        <option value="cardip-pps">Cardip® - PPS</option>
+                        <option value="rims-repair">Rims Repair</option>
+                        <option value="premium-car-wash">Premium Car Wash</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/971586012233" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram Floating Button -->
+    <a href="https://instagram.com/360auto.concept" class="instagram-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon_logo.png" alt="Instagram">
+    </a>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2024 360 Autoconcept - Dubai’s Premier Car Care Center</p>
+        <div class="footer-info">
+            <p>Contact us: +971 585 879 733 | info@360autoconcept.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
